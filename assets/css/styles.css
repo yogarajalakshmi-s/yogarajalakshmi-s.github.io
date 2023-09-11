@@ -1,6 +1,6 @@
 img {
-    width: 508px;
-    height: 310px;
+    width: 259px;  /* Previously 508x310 */
+    height: 250px;
 }
 
 .text-overlay {
@@ -133,3 +133,7 @@ h4 {
     left: 0%;
     }
   } */
+
+/* main footer {
+  padding: 20px;
+} */
