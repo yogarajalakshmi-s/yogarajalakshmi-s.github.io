@@ -23,6 +23,67 @@ h4 {
     text-transform: none;
 }
 
+.image-gallery {
+  overflow: auto;
+  margin-left: -3% !important;
+  padding-bottom: 1rem !important;
+  border-top: none !important;
+}
+
+.image-gallery a {
+  float: left;
+  display: block;
+  margin: 0 0 1% 1%;
+  /* width: 34%; */
+  text-align: center;
+  text-decoration: none!important;
+  border-bottom: none !important;
+}
+
+.image-gallery a span {
+  /* display: block; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1px 0;
+}
+
+.image-gallery a img {
+  width: 200px;
+  height: 150px;
+  display: block;
+  padding-left: 0.5rem !important;
+}
+
+.image-gallery-narrow {
+  overflow: auto;
+  margin-left: -1%!important;
+  border-top: none !important;
+  padding-top: 1rem !important;
+  padding-bottom: 0.1rem !important;
+}
+
+.image-gallery-narrow a {
+  float: left;
+  display: block;
+  margin: 0 0 1% 1%;
+  /* width: 19%; */
+  text-align: center;
+  text-decoration: none!important;
+  border-bottom: none !important;
+}
+.image-gallery-narrow a span {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 3px 0;
+}
+.image-gallery-narrow a img {
+  height: 300px;
+  width: 195px;
+  display: block;
+}
 
 /* Uncomment this for education timeline chart */
 /* .timeline {
