@@ -9,14 +9,84 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<style>
-			.image-gallery img {
+			/* .image-gallery img {
 				width: 175px !important;
 				height: 140px !important;
 			}
 
 			.image-gallery span {
 				font-size: 15px !important;
+			} */
+
+			.certifications {
+				max-width: 1200px; /* Adjust as needed */
+				margin: 0 auto;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
 			}
+
+			.certification {
+				width: calc(25% - 20px); /* 4 certifications per row on larger screens */
+				margin-bottom: 20px; /* Add spacing between certificates */
+				background-color: #fff; /* Certificate background color */
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for each certificate */
+				overflow: hidden; /* Hide overflowing content (title) */
+			}
+
+			.certification a {
+				text-decoration: none;
+				color: inherit;
+				display: block; /* Make the entire certificate clickable */
+			}
+
+			.certification:hover img {
+				transform: scale(1.05); /* Add a slight zoom effect on hover */
+			}
+
+			.certification:hover .title {
+				transform: translateY(0);
+				opacity: 1;
+			}
+
+			.image-wrapper {
+				position: relative;
+			}
+
+			.certification img {
+				max-width: 100%;
+				height: auto;
+				display: block;
+				transition: transform 0.2s ease-in-out;
+			}
+
+			.title {
+				background-color: rgba(0, 0, 0, 0.7); /* Background color for title */
+				color: #fff; /* Text color for title */
+				padding: 10px;
+				text-align: center;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				transform: translateY(0); /* Display title at the bottom */
+				opacity: 1;
+				transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+			}
+
+			/* Media Query for medium-sized screens */
+			@media (max-width: 768px) {
+				.certification {
+					width: calc(50% - 20px); /* 2 certifications per row on medium-sized screens */
+				}
+			}
+
+			/* Media Query for smaller screens */
+			@media (max-width: 576px) {
+				.certification {
+					width: calc(100% - 20px); /* 1 certification per row on smaller screens */
+				}
+			}	
 		</style>
 	</head>
 	<body class="is-preload">
@@ -72,13 +142,41 @@
 										<li>Won competitions on creative writing and elocution.</li>
                                     </ul>
 
-                                    <h3>Online Certifications</h3>
-									<div class="image-gallery">
-										<a href="https://www.udemy.com/certificate/UC-32441d82-2de8-40a1-b817-761bb28f58a2/" target="_blank">
-											<img src="images/udemy.jpg" alt="udemy"/>
-											<span><b>Python Pro Bootcamp</b></span>
-										</a>
-										
+									<h3>Online Certifications</h3>
+									<div class="certifications">
+										<div class="certification">
+											<a href="https://www.udemy.com/certificate/UC-32441d82-2de8-40a1-b817-761bb28f58a2/" target="_blank">
+												<div class="image-wrapper">
+													<img src="images/udemy.jpg" alt="python certificate">
+													<div class="title">Python Pro Bootcamp</div>
+												</div>
+											</a>
+										</div>
+										<div class="certification">
+											<a href="images/AI for everyone certificate.pdf" target="_blank">
+												<div class="image-wrapper">
+													<img src="images/coursera.png" alt="AI for everyone certificate">
+													<div class="title">Certificate Title 1</div>
+												</div>
+											
+											</a>
+										</div>
+										<div class="certification">
+											<a href="https://www.udemy.com/certificate/UC-32441d82-2de8-40a1-b817-761bb28f58a2/" target="_blank">
+												<div class="image-wrapper">
+													<img src="images/udemy.jpg" alt="udemy">
+													<div class="title">Certificate Title 1</div>
+												</div>			
+											</a>
+										</div>
+										<div class="certification">
+											<a href="https://www.udemy.com/certificate/UC-32441d82-2de8-40a1-b817-761bb28f58a2/" target="_blank">
+												<div class="image-wrapper">
+													<img src="images/udemy.jpg" alt="udemy">
+													<div class="title">Certificate Title 1</div>
+												</div>	
+											</a>
+										</div>
 									</div>
 								</header>
 							</article>
