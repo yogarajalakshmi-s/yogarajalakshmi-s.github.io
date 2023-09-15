@@ -7,86 +7,33 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="assets/css/styles.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
 		<style>
-			/* .image-gallery img {
-				width: 175px !important;
-				height: 140px !important;
-			}
+		.image-gallery a img {
+			width: 220px;
+			height: 180px;
+		}
+        .image-container {
+			position: relative;
+			display: inline-block;
+		}
 
-			.image-gallery span {
-				font-size: 15px !important;
-			} */
+		.title {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 96.4%;
+			background-color: rgba(0, 0, 0, 0.7);
+			color: white;
+			text-align: center;
+			/* padding: 5px; */
+			font-size: 13px;
+			margin-left: 7.8px;
+		}
 
-			.certifications {
-				max-width: 1200px; /* Adjust as needed */
-				margin: 0 auto;
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
-			}
-
-			.certification {
-				width: calc(25% - 20px); /* 4 certifications per row on larger screens */
-				margin-bottom: 20px; /* Add spacing between certificates */
-				background-color: #fff; /* Certificate background color */
-				box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for each certificate */
-				overflow: hidden; /* Hide overflowing content (title) */
-			}
-
-			.certification a {
-				text-decoration: none;
-				color: inherit;
-				display: block; /* Make the entire certificate clickable */
-			}
-
-			.certification:hover img {
-				transform: scale(1.05); /* Add a slight zoom effect on hover */
-			}
-
-			.certification:hover .title {
-				transform: translateY(0);
-				opacity: 1;
-			}
-
-			.image-wrapper {
-				position: relative;
-			}
-
-			.certification img {
-				max-width: 100%;
-				height: auto;
-				display: block;
-				transition: transform 0.2s ease-in-out;
-			}
-
-			.title {
-				background-color: rgba(0, 0, 0, 0.7); /* Background color for title */
-				color: #fff; /* Text color for title */
-				padding: 10px;
-				text-align: center;
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				transform: translateY(0); /* Display title at the bottom */
-				opacity: 1;
-				transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
-			}
-
-			/* Media Query for medium-sized screens */
-			@media (max-width: 768px) {
-				.certification {
-					width: calc(50% - 20px); /* 2 certifications per row on medium-sized screens */
-				}
-			}
-
-			/* Media Query for smaller screens */
-			@media (max-width: 576px) {
-				.certification {
-					width: calc(100% - 20px); /* 1 certification per row on smaller screens */
-				}
-			}	
+		li {
+			font-size: 17px;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+		}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -134,50 +81,88 @@
                                         </div>
                                     </div> -->
                                     <h3>Education</h3>
-                                    <h4 style="text-align: left; color: black;">Sri Krishna College of Engineering and Technology (2017 - 2021)</h4>
-                                    <h5 style="text-align: left; text-transform: none; font-weight: 50;">Bachelor of Engineering, Electronics and Communication Engineering</h5>
+                                    <h4 style="text-align: left; color: black; margin-bottom: 0.5rem;">SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY (2017 - 2021)</h4>
+                                    <h4 style="text-align: left; text-transform: none; font-weight: 50; color: black;">Bachelor of Engineering, Electronics and Communication Engineering</h4>
                                     <ul style="text-align: left; font-size: 13px;">
-                                        <li>Top 4% in the department with 9.37/10 GPA</li>
+                                        <li>Top 4% in the department with 9.37 of 10 GPA</li>
                                         <li>Published a paper on "<a href="https://ieeexplore.ieee.org/document/9388634">Machine Learning based approach on ploughing to enhance crop productivity</a>" in IEEE.</li>
-										<li>Won competitions on creative writing and elocution.</li>
+										<li>Won competitions on creative writing and elocution, and my drawings were published in the college magazine.</li>
                                     </ul>
 
 									<h3>Online Certifications</h3>
-									<div class="certifications">
-										<div class="certification">
+									<div class="image-gallery">
+										<div class="certificate">
 											<a href="https://www.udemy.com/certificate/UC-32441d82-2de8-40a1-b817-761bb28f58a2/" target="_blank">
-												<div class="image-wrapper">
-													<img src="images/udemy.jpg" alt="python certificate">
+												<div class="image-container">
+													<img src="images/courses/udemy.jpg" alt="python certificate"/>
 													<div class="title">Python Pro Bootcamp</div>
 												</div>
 											</a>
 										</div>
-										<div class="certification">
-											<a href="images/AI for everyone certificate.pdf" target="_blank">
-												<div class="image-wrapper">
-													<img src="images/coursera.png" alt="AI for everyone certificate">
-													<div class="title">Certificate Title 1</div>
+										<div class="certificate">
+											<a href="images/courses/AI for everyone certificate.pdf" target="_blank">
+												<div class="image-container">
+													<img src="images/courses/coursera.png" alt="AI for everyone certificate"/>
+													<div class="title">AI for everyone</div>
 												</div>
-											
 											</a>
 										</div>
-										<div class="certification">
-											<a href="https://www.udemy.com/certificate/UC-32441d82-2de8-40a1-b817-761bb28f58a2/" target="_blank">
-												<div class="image-wrapper">
-													<img src="images/udemy.jpg" alt="udemy">
-													<div class="title">Certificate Title 1</div>
-												</div>			
+										<div class="certificate">
+											<a href="images/courses/Image Augmentation with Keras.pdf" target="_blank">
+												<div class="image-container">
+													<img src="images/courses/coursera.png" alt="image augmentation certificate"/>
+													<div class="title">Image Augmentation with Keras</div>
+												</div>
 											</a>
 										</div>
-										<div class="certification">
-											<a href="https://www.udemy.com/certificate/UC-32441d82-2de8-40a1-b817-761bb28f58a2/" target="_blank">
-												<div class="image-wrapper">
-													<img src="images/udemy.jpg" alt="udemy">
-													<div class="title">Certificate Title 1</div>
-												</div>	
+										<div class="certificate">
+											<a href="images/courses/Elements of AI.png" target="_blank">
+												<div class="image-container">
+													<img src="images/courses/reaktor.png" alt="Elements of AI certificate"/>
+													<div class="title">Elements of AI</div>
+												</div>
 											</a>
 										</div>
 									</div>
+									<div class="image-gallery">
+										<div class="certificate">
+											<a href="images/courses/Ekalaivan Introduction to Aerodynamics.pdf" target="_blank">
+												<div class="image-container">
+													<img src="images/courses/brahmastra-aerospace.png" alt="Introduction to Aerodynamics"/>
+													<div class="title">Introduction to Aerodynamics</div>
+												</div>
+											</a>
+										</div>
+										<div class="certificate">
+											<a href="images/courses/Drone Design and Development.pdf" target="_blank">
+												<div class="image-container">
+													<img src="images/courses/brahmastra-aerospace.png" alt="Drone Design and Development"/>
+													<div class="title">Drone Design and Development</div>
+												</div>
+											</a>
+										</div>
+										<div class="certificate">
+											<a href="images/courses/Guvi UiPath RPA certificate.png" target="_blank">
+												<div class="image-container">
+													<img src="images/courses/guvi.jpg" alt="Robotic Process Automation"/>
+													<div class="title">Robotic Process Automation</div>
+												</div>
+											</a>
+										</div>
+										<div class="certificate">
+											<a href="images/courses/Introduction to classical music certificate.pdf" target="_blank">
+												<div class="image-container">
+													<img src="images/courses/coursera.png" alt="Introduction to classical music certificate"/>
+													<div class="title">Introduction to classical music certificate</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<h3 style="padding-top: 10px; margin-bottom: 0.5rem;">In-plant training</h3>
+                                    <ul style="text-align: left; font-size: 13px;">
+										<li>Android Workshop at UNIQ Technologies (Nov 2018)</a></li>
+										<li>Embedded systems design using Arduino and Control of Robotic Arm - National Institute of Electronics and Information Technology (May 2018 - June 2018)</a></li>
+                                    </ul>
 								</header>
 							</article>
 					</div>
