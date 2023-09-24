@@ -41,7 +41,7 @@ h4 {
 }
 
 .image-gallery a span {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Roboto", sans-serif;
   /* display: block; */
   text-overflow: ellipsis;
   overflow: hidden;
@@ -75,7 +75,7 @@ h4 {
 }
 
 .image-gallery-narrow a span {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Roboto", sans-serif;
   display: block;
   text-overflow: ellipsis;
   overflow: hidden;
