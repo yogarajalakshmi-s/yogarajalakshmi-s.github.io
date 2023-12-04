@@ -11,6 +11,7 @@
     padding-top: 1rem !important;
     font-family: "Roboto", sans-serif !important;
     line-height: 28px;
+    position: relative;
 }
 
 .blog-post p {
@@ -24,4 +25,30 @@
 
 .post-meta {
     font-size: 15px;
+}
+
+.image-with-line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.image-with-line .vertical-line {
+    border-right: 3px solid #747474;
+    height: 200px;
+    padding-left: 20px;
+    right: 0;
+    top: 0;
+}
+
+.image-with-line img {
+    max-width: 300px;
+    height: auto;
+}
+
+.image-with-line .text-container {
+    padding-left: 20px;
+    font-size: large;
 }
