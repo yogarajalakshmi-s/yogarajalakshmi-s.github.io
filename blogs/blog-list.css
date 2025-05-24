@@ -1,42 +1,74 @@
+a {
+    text-decoration: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
 .tag-list {
-    font-family: "Roboto", sans-serif !important;
-    border-bottom: 1px solid var(--global-divider-color);
-    text-align: center;
-    padding-top: 2rem !important;
-    padding-bottom: 0.5rem !important;
-    border-top: none;
-    border-bottom: none;
-}
-
-.tag-list ul {
-    justify-content: center;
-    display: flow-root;
-    overflow: hidden;
-    text-align: center;
-    list-style-type: none;
-    background-color: lightgrey;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tag-list ul {
+    display: flex;
+    align-items: center;
+    gap: 18px;
     margin: 0;
     padding: 0;
-}
-
-.tag-list ul li {
     list-style: none;
+  }
+  
+  .tag-list ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .tag-list ul li a {
     display: inline-block;
-    padding: 0.5rem 0.5rem;
-    float: left;
-    color: var(--global-text-color-light);
+    padding: 0.55em 1.5em;
+    background: #ededed;
+    border-radius: 2em;
+    color: #444;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+    box-shadow: 0 2px 8px rgba(30,60,90,0.05);
+    border: none;
+    text-decoration: none;
+  }
+  
+  .tag-list ul li a.selected,
+  .tag-list ul li a:focus {
+    background: #bdbdbd;
+    color: #232323;
+    box-shadow: 0 4px 16px rgba(44,44,44,0.10);
+  }
+  
+  .tag-list ul li a:hover:not(.selected) {
+    background: #d6d6d6;
+    color: #232323;
+  }
 
-    .selected {
-        background-color: grey;
-        color: white;
-    }
+  .blog-list li a,
+.blog-list li a:visited,
+.blog-list li a:active,
+.blog-list li a:focus,
+.blog-list li a:hover {
+  text-decoration: none !important;
+  color: #131314;
+  outline: none;
+  box-shadow: none;
 }
 
-.tag-list ul li a {
-    display: block;
-    padding: 10px;
-    border-bottom-color: #dddddd;
+.blog-list li a:hover,
+.blog-list li a:focus,
+.blog-list li a:active {
+  color: #737383 !important;
+  text-decoration: none !important;
 }
+
 
 .blog-list {
     font-family: "Roboto", sans-serif !important;
@@ -46,28 +78,73 @@
     border-top: none !important;
 }
 
-.blog-list ul{
-    font-size: 17px;
-    margin-bottom: 0 !important;
-}
+.blog-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .blog-list li {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(30,60,90,0.06);
+    padding: 1.1rem 1.3rem 1rem 1.3rem;
+    margin-bottom: 10px !important;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 0;
+  }
+  
+  .blog-list li:hover {
+    box-shadow: 0 6px 24px rgba(44,44,44,0.09);
+    transform: translateY(-2px) scale(1.012);
+  }
 
-.blog-list li {
-    list-style-type: none;
-    border-bottom: 1px solid darkgray;
-    padding-top: 1rem;
-    padding-left: 0 !important;
-}
+  .blog-list li a:hover {
+    text-decoration: none !important;
+    color: #131314;
+  }  
+  
+  
+  .blog-list li a {
+    color: #232323;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .blog-list p {
+    margin: 0 0 0.4rem 0;
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
 
-.blog-list p {
-    margin-bottom: -1rem;
-}
-
-.blog-list li a:hover {
-    color: var(--global-theme-color);
-}
-
-.post-meta {
-    color: var(--global-text-color-light);
-    font-size: 0.875rem;
+  .blog-list p:hover {
+    color: none !important;
+  }
+  
+  .post-meta {
+    color: #888;
+    font-size: 0.91rem;
     margin-bottom: 0;
-}
+    font-weight: 400;
+  }
+
+  .blog-section-title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin: 1.2rem 0 0.4rem 0;
+    color: #232323;
+  }
+  #main {
+    padding-top: 0.5rem;
+  }
+  
